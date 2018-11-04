@@ -1,8 +1,10 @@
 # steps
-1. cross compiler
+1. cross compiler go project to get binary
 2. build docker image
 3. run container
+```
 docker run --name <container_name> -v /logs:/logs:rw -p 7070:7070 -e TZ=`ls -la /etc/localtime | cut -d/ -f8-9` --rm <image_id|image_repo:tag>
+```
 
 # useful docker cmds
 - docker images
