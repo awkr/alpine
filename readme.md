@@ -14,3 +14,7 @@ docker run --name <container_name> -v /logs:/logs:rw -p 7070:7070 -e TZ=`ls -la 
 - docker run --name <container_name> [-p <host_port|docker_port>] [-d] [--rm] <image_id>
 - docker rmi $(docker images -f "dangling=true" -q)
 
+# todo
++ kubernetes
++ service mesh with istio
+
